@@ -1,0 +1,13 @@
+<!--
+  Manifest snippet for the MCP client.  Merge this into your Android app's
+  manifest to declare the NotificationReceiver.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mcpclient">
+    <application>
+        <!-- Register the broadcast receiver to handle alarms -->
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="false" />
+    </application>
+</manifest>
